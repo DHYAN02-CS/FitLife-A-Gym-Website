@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FitLife Trainer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="fade-in">
+        <nav class="container">
+            <div class="logo"><i class="fas fa-dumbbell"></i><span>FitLife</span></div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <li><a href="cart.html" class="cart-link"><i class="fas fa-shopping-cart"></i><span
+                            class="cart-count">0</span></a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in-up">Get In Touch</h1>
+            <p class="fade-in-up" style="animation-delay: 0.2s">Let's Start Your Fitness Journey Together</p>
+        </div>
+    </section>
+
+    <section class="contact-section section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info fade-in-left">
+                    <h2>Contact Information</h2>
+                    <p>Have questions? We're here to help! Reach out and let's discuss your fitness goals.</p>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-details">
+                            <h4>Address</h4>
+                            <p>123 Fitness Street, Gym City, ST 12345</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <p>+91 (555) 123-4567</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <p>info@fitlife.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-clock"></i></div>
+                        <div class="contact-details">
+                            <h4>Working Hours</h4>
+                            <p>Mon - Fri: 6:00 AM - 10:00 PM</p>
+                            <p>Sat - Sun: 8:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper fade-in-right">
+                    <h2>Book a Session</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Enter your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone"><i class="fas fa-phone"></i> Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 (555) 123-4567">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="program"><i class="fas fa-dumbbell"></i> Interested Program</label>
+                            <select id="program" name="program">
+                                <option value="">Select a program</option>
+                                <option value="Weight Loss">Weight Loss</option>
+                                <option value="Strength Training">Strength Training</option>
+                                <option value="Yoga & Flexibility">Yoga & Flexibility</option>
+                                <option value="HIIT">HIIT & Conditioning</option>
+                                <option value="Sports Performance">Sports Performance</option>
+                                <option value="Nutrition">Nutrition Coaching</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message"><i class="fas fa-comment"></i> Message</label>
+                            <textarea id="message" name="message" rows="5"
+                                placeholder="Tell us about your fitness goals..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-outline">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Message</span>
+                        </button>
+
+                        <button type="button" id="downloadBtn" class="btn btn-outline" style="margin-top: 15px;">
+                            <i class="fas fa-download"></i>
+                            <span>Download Contact Info</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+
+    <div class="toast-notification success" id="toastNotification">
+        <i class="fas fa-check-circle"></i>
+        <span>Message sent successfully!</span>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-dumbbell"></i> FitLife</h3>
+                    <p>Transform your body and life with professional fitness training.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@fitlife.com</p>
+                    <p><i class="fas fa-phone"></i> +91 (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FitLife Trainer. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

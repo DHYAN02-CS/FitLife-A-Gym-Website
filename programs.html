@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - FitLife Trainer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="fade-in">
+        <nav class="container">
+            <div class="logo">
+                <i class="fas fa-dumbbell"></i>
+                <span>FitLife</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="programs.html" class="active">Programs</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-link">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a></li>
+            </ul>
+        </nav>     
+    </header>
+
+    <!-- PAGE HEADER -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="fade-in-up">Training Programs</h1>
+            <p class="fade-in-up" style="animation-delay: 0.2s">Choose Your Path to Transformation</p>
+        </div>
+    </section>
+
+
+    <!-- Christmas  -->
+    <section class="christmas-offer-section section"
+        style="background: red;  color: white; padding: 60px 0; text-align: center; margin-bottom: 20px; border-radius: 50%;">
+        <div class="container">
+
+            <h2 style="font-size: 2.5rem; margin-bottom: 15px; color: white;"> Christmas Special Offer! </h2>
+            <p style="font-size: 1.2rem; margin-bottom: 30px; max-width: 700px;color:blue; margin-left: auto; margin-right: auto;">
+                Get <b>45% OFF</b> on all annual memberships this holiday season! Start your New Year's
+                resolution early with FitLife Trainer.
+            </p>
+            <br>
+        </div>
+    </section>
+
+
+    <!-- PROGRAMS SECTION -->
+    <section class="programs-section section">
+        <div class="container">
+            <div class="programs-grid">
+
+                <!-- Christmas Eve Program -->
+                <div class="program-card fade-in-up" style="animation-delay: 0.1s">
+                    <div class="program-image">
+                        <img src="images/lifting.jpg" alt="Christmas Eve Special">
+                    </div>
+                    <div class="program-content">
+                        <h3>Christmas Eve Special</h3>
+                        <p class="program-description">Celebrate the holidays with a high-energy, fun-filled Christmas
+                            Eve workout! Open to all members for a festive fitness session.</p>
+                        <div class="program-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Dec 24-26th only</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Community Event</span>
+                            </div>
+                            <div class="feature-item">
+                            <i class="fas fa-check"></i>
+                                <span>Holiday Treats</span>
+                            </div>
+                        </div>
+                        <div class="program-price">
+                            <span class="original-price">₹1,999</span>
+                            <span class="current-price">1,199</span>
+                            <span class="discount-badge">-45% OFF</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="xmas" data-name="Christmas Eve Special"
+                            data-price="1199" data-original-price="1999">
+                            <i class="fas fa-cart-plus"></i>
+                            <span>add to cart</span>
+                        </button>
+                    </div>
+                </div>
+
+
+                <!-- Weight Loss Program -->
+                <div class="program-card fade-in-up" style="animation-delay: 0.1s">
+                    <!-- <div class="program-badge">Best Seller</div> -->
+                    <div class="program-image">
+                        <img src="images/cardio.jpg" alt="Weight Loss Program">
+                        <!-- <div class="program-overlay">
+                            <i class="fas fa-fire"></i>
+                        </div> -->
+                    </div>
+                    <div class="program-content">
+                        <h3>Weight Loss Program</h3>
+                        <p class="program-description">Burn fat and get lean with structured cardio and diet plans. I
+                            design programs that combine metabolic conditioning, strength training, and sustainable
+                            nutrition habits.</p>
+                        <div class="program-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>12-Week Program</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Nutrition Plan Included</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Progress Tracking</span>
+                            </div>
+                        </div>
+                        <div class="program-price">
+                            <span class="original-price">₹24,999</span>
+                            <span class="current-price">₹20,999</span>
+                            <span class="discount-badge">-17%</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="1" data-name="Weight Loss Program"
+                            data-price="20999" data-original-price="24999">
+                            <i class="fas fa-cart-plus"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Strength Training Program -->
+                <div class="program-card fade-in-up" style="animation-delay: 0.2s">
+                    <!-- <div class="program-badge featured">Featured</div> -->
+                    <div class="program-image">
+                        <img src="images/strength.jpg" alt="Strength Training Program">
+                        <!-- <div class="program-overlay">
+                            <i class="fas fa-dumbbell"></i>
+                        </div> -->
+                    </div>
+                    <div class="program-content">
+                        <h3>Strength Training Program</h3>
+                        <p class="program-description">Build muscle and increase strength with progressive workouts. I
+                            create structured training programs that focus on hypertrophy, compound lifts, and proper
+                            form.</p>
+                        <div class="program-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>16-Week Program</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Exercise Videos</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>1-on-1 Coaching</span>
+                            </div>
+                        </div>
+                        <div class="program-price">
+                            <span class="original-price">₹32,999</span>
+                            <span class="current-price">₹28,999</span>
+                            <span class="discount-badge">-13%</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="2" data-name="Strength Training Program"
+                            data-price="28999" data-original-price="32999">
+                            <i class="fas fa-cart-plus"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Yoga & Flexibility Program -->
+                <div class="program-card fade-in-up" style="animation-delay: 0.3s">
+                    <!-- <div class="program-badge new">New</div> -->
+                    <div class="program-image">
+                        <img src="images/yoga.jpg" alt="Yoga & Flexibility Program">
+                        <!-- <div class="program-overlay">
+                            <i class="fas fa-spa"></i>
+                        </div> -->
+                    </div>
+                    <div class="program-content">
+                        <h3>Yoga & Flexibility</h3>
+                        <p class="program-description">Improve flexibility, posture, and mental clarity. My sessions
+                            blend mobility training, guided stretching, and foundational yoga flows.</p>
+                        <div class="program-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>8-Week Program</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Daily Sessions</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Meditation Guide</span>
+                            </div>
+                        </div>
+                        <div class="program-price">
+                            <span class="original-price">₹16,499</span>
+                            <span class="current-price">₹14,999</span>
+                            <span class="discount-badge">-10%</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="3" data-name="Yoga & Flexibility"
+                            data-price="14999" data-original-price="16499">
+                            <i class="fas fa-cart-plus"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- HIIT Program -->
+                <div class="program-card fade-in-up" style="animation-delay: 0.4s">
+                    <div class="program-image">
+                        <img src="images/HIT.jpg" alt="HIIT Program">
+                        <!-- <div class="program-overlay">
+                            <i class="fas fa-bolt"></i>
+                        </div> -->
+                    </div>
+                    <div class="program-content">
+                        <h3>HIIT & Conditioning</h3>
+                        <p class="program-description">High-intensity interval training for maximum calorie burn. Short,
+                            intense workouts that fit into your busy schedule while delivering results.</p>
+                        <div class="program-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>6-Week Program</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>30-Min Workouts</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>No Equipment Needed</span>
+                            </div>
+                        </div>
+                        <div class="program-price">
+                            <span class="original-price">₹12,499</span>
+                            <span class="current-price">₹10,999</span>
+                            <span class="discount-badge">-13%</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="4" data-name="HIIT & Conditioning"
+                            data-price="10999" data-original-price="12499">
+                            <i class="fas fa-cart-plus"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Sports Performance -->
+                <div class="program-card fade-in-up" style="animation-delay: 0.5s">
+                    <div class="program-image">
+                        <img src="images/equipment.jpg" alt="Sports Performance">
+                        <!-- <div class="program-overlay">
+                            <i class="fas fa-running"></i>
+                        </div> -->
+                    </div>
+                    <div class="program-content">
+                        <h3>Sports Performance</h3>
+                        <p class="program-description">Enhance athletic performance with sport-specific training.
+                            Improve speed, agility, power, and endurance for competitive advantage.</p>
+                        <div class="program-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>12-Week Program</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Performance Testing</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Sport-Specific</span>
+                            </div>
+                        </div>
+                        <div class="program-price">
+                            <span class="original-price">₹37,499</span>
+                            <span class="current-price">₹32,999</span>
+                            <span class="discount-badge">-11%</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="5" data-name="Sports Performance"
+                            data-price="32999" data-original-price="37499">
+                            <i class="fas fa-cart-plus"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Nutrition Coaching -->
+                <div class="program-card fade-in-up" style="animation-delay: 0.6s">
+                    <!-- <div class="program-badge">Popular</div> -->
+                    <div class="program-image">
+                        <img src="images/Nutrition.jpg" alt="Nutrition Coaching">
+                        <!-- <div class="program-overlay">
+                            <i class="fas fa-apple-alt"></i>
+                        </div> -->
+                    </div>
+                    <div class="program-content">
+                        <h3>Nutrition Coaching</h3>
+                        <p class="program-description">Transform your eating habits with personalized nutrition
+                            coaching. Learn sustainable eating strategies that support your fitness goals.</p>
+                        <div class="program-features">
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>10-Week Program</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Meal Plans</span>
+                            </div>
+                            <div class="feature-item">
+                                <i class="fas fa-check"></i>
+                                <span>Recipe Library</span>
+                            </div>
+                        </div>
+                        <div class="program-price">
+                            <span class="original-price">₹23,499</span>
+                            <span class="current-price">₹18,999</span>
+                            <span class="discount-badge">-18%</span>
+                        </div>
+                        <button class="btn btn-primary add-to-cart" data-id="6" data-name="Nutrition Coaching"
+                            data-price="18999" data-original-price="23499">
+                            <i class="fas fa-cart-plus"></i>
+                            <span>Add to Cart</span>
+                        </button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <div class="toast-notification" id="toastNotification">
+        <i class="fas fa-check-circle"></i>
+        <span>Program added to cart!</span>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-dumbbell"></i> FitLife</h3>
+                    <p>Transform your body and life with professional fitness training.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-envelope"></i> info@fitlife.com</p>
+                    <p><i class="fas fa-phone"></i> +91 (555) 123-4567</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 FitLife Trainer. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
