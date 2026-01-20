@@ -228,14 +228,17 @@ function renderCart() {
         if (emptyCart) emptyCart.style.display = 'none';
         if (cartSummary) cartSummary.style.display = 'block';
 
+
+     // Cart changes 
         cartItems.innerHTML = cart.map(item => `
             <div class="cart-item fade-in-up">
                 <div class="cart-item-info">
                     <h3>${item.name}</h3>
                     <div class="cart-item-price">
-                        <span class="price-old">${formatINR(item.originalPrice)}</span>
+                       
                         <span class="price-new">${formatINR(item.price)}</span>
-                        <span class="savings-amount">Save ${formatINR(item.originalPrice - item.price)}</span>
+                       
+
                     </div>
                 </div>
                 <button class="cart-item-remove" data-id="${item.id}">
