@@ -50,7 +50,7 @@ body {
 }
 
 .container {
-    width: 90%;
+    width:80%;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -163,7 +163,7 @@ body {
 header {
     background: var(--gradient-blue);
     color: white;
-    position: sticky;
+    position:sticky;
     top: 0;
     z-index: 1000;
     box-shadow: var(--shadow-md);
@@ -329,15 +329,12 @@ nav {
     color: var(--primary-color);
 }
 
-body.dark-theme .btn-outline {
-    border-color: var(--accent-color);
-    color: var(--accent-color);
-}
+
 
 .btn-outline:hover {
     background: var(--primary-color);
     color: white;
-    transform: translateY(-3px);
+    transform: translateY(-5px);
 }
 
 .btn-large {
